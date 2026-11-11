@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main app */
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Light and dark mode */
+.light {
+  background-color: #f5f0e8;
+  color: #333;
+}
+
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+
+/* Menu and order summary */
+main {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  min-width: 0;
+}
+
+/* Menu categories */
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #795548;
+  border-bottom: 2px solid #795548;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* Individual menu items */
+.menu-item {
+  padding: 18px;
+  margin-bottom: 15px;
+  
+  
+}
+
+/* Item name */
+.menu-item h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+/* Item description */
+.menu-item .description {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.5;
+  margin: 5px 0 10px;
+}
+
+/* Item price */
+.menu-item .price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #795548;
+  margin: 10px 0;
+}
+
+/* Dark mode */
+.dark .menu-category h3 {
+  color: #d4a982;
+  border-color: #d4a982;
+}
+
+
+.dark .menu-item .description {
+  color: #bbb;
+}
+
+.dark .menu-item .price {
+  color: #d4a982;
+}
+
+
+/* Order items */
+.order-item {
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #795548;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+/* Item description and price */
+.menu-item p {
+  font-size: 13px;
+  margin: 5px 0;
+  color: #777;
+}
+
+/* Dark mode */
+.dark .menu-item p {
+  color: #bbb;
+}
